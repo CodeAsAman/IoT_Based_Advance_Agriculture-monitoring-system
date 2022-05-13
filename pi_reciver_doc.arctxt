@@ -1,0 +1,88 @@
+# config --- Raspberry Pi 3 B+ SSH and WiFi Setup (Headless)
+## Enable ssh
+### To enable it you need to place an empty file named *ssh* 
+### (no extension) in the root of the *boot* disk.
+#
+##########  tensorflow support python3.7 or python3.6 !!!!!!!!!!!!!!!
+########## use 2020-12-02-raspios-buster-armhf-full.zip (contains python3.7)
+## Add network info (WiFi):
+### Create a file in the root of boot called: *wpa_supplicant.conf* 
+### (instructions below). Then paste the following into it (adjusting for 
+### **your ISO 3166 alpha-2 country code**, network name and network password)
+### CODE LIST - https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes  
+### for india -> "country=IN":
+		country=US
+		ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+		update_config=1
+		
+		network={
+			ssid="NETWORK-NAME"
+			psk="NETWORK-PASSWORD"
+		}
+### or connect LAN (or JIOFI). 
+# password (default):  the default username is *pi* and the default password is *raspberry*.
+## Sudo set-root password
+### Default for Raspbian is that root has no password. You use the 'pi' account 
+### instead gaining root privileges with 'sudo'. That said, you can give root a 
+### password fairly easily.
+### $sudo su 
+### You can set the root password but should not be necessary.
+### $sudo passwd root
+## The first step is to run, raspi-config and expand your filesystem
+## $sudo raspi-config
+## And then select the “7 Advanced Options” menu item.
+## Followed by selecting “A1 Expand filesystem”.
+## Once prompted, you should select the first option, “A1 Expand File System”, hit enter  
+## on your keyboard, arrow down to the “<Finish>” button, 
+# Activate pi camera - 
+##  $sudo raspi-config
+## Select - 5 Interfacing options -> P1 Camera -> Actiavtte
+# Activate VNC -
+##  $sudo raspi-config
+## Select - 5 Interfacing options -> P3 VNC, I2C, SPI -> Actiavtte
+# Activate serial communication
+##  $sudo raspi-config
+## Select - 5 Interfacing options -> P6 Serial Port     # or (Ubuntu) $sudo chmod a+rw /dev/ttyUSB0
+## and then reboot
+## $sudo reboot
+# Update and Upgrade - https://www.raspberrypi.com/documentation/computers/os.html
+# as su (root) -
+## $sudo apt-get update && sudo apt-get upgrade
+# $sudo apt-get install build-essential cmake pkg-config
+# $sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng-dev
+# $sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+# $sudo apt-get install libxvidcore-dev libx264-dev
+# $sudo apt-get install libfontconfig1-dev libcairo2-dev
+# $sudo apt-get install libgdk-pixbuf2.0-dev libpango1.0-dev
+# $sudo apt-get install libgtk2.0-dev libgtk-3-dev
+# $sudo apt-get install libopenblas-dev libatlas-base-dev liblapack-dev gfortran
+# $sudo apt-get install libhdf5-dev libhdf5-serial-dev libhdf5-103
+# $sudo apt-get install libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
+# $sudo apt-get install screen
+# $sudo apt-get install libqtgui4 libqtwebkit4 libqt4-test 
+## Install graphviz
+# $sudo apt install graphviz
+# $sudo reboot
+## NOTE RUN AS SUPER USER (run with pip or pip3 (recommended) (NOT with python -m pip 
+## or python3 -m pip or python3 -m pip3))
+# $sudo su 
+## Install scipy pakage (as su):
+# $sudo apt-get install python3-pyqt5
+## Install numpy (may take upto 30-40 minutes)
+# $pip3 install --upgrade numpy 
+## Install others 
+# $pip3 install --upgrade scipy matplotlib pandas sympy nose 
+# $pip3 install --upgrade pydot graphviz
+## NOTE - BIG FILE (OpenCV) - 150 MB VERY SLOW (MAY NOT WORK - MORE THAN 45 MINUTES)
+# $pip3 install --upgrade opencv-contrib-python     ## or $pip3 install --upgrade opencv-python
+# $pip3 install --upgrade scikit-learn
+# $pip3 install --upgrade pillow imutils progressbar2 beautifulsoup4
+# $sudo apt-get install python3-rpi.gpio python3-spidev
+# Python interface to the Semtech SX1276/7/8/9 long range, low power transceiver family.
+# Source: https://github.com/mayeranalytics/pySX127x
+# $wget https://pypi.python.org/packages/source/s/spidev/spidev-3.1.tar.gz
+# $tar xfvz  spidev-3.1.tar.gz
+# $cd spidev-3.1
+# $sudo python setup.py install
+# $python3 -m pip install pyLoRa
+# $sudo apt autoremove 

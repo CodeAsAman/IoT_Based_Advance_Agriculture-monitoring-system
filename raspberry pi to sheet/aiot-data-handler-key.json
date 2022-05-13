@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "aiot-data-handler",
+  "private_key_id": "d6fc4c2de13cda396e12571d6ccac4e818b926f1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDziJO0ThS/pa4\nCBfETE/XgjwaoY4NzwsgDoREZ8TwDY/4YNtlBHFcUMO/bfPz830MLCTzwBI5uSOK\nrqyjRnK4xdKhp+/S2KLCu63sXfYIAO81ExLUHyBzwCE/hpKRriaHePdY6Ad/lGtR\nGkpt+7l1jZVj3bMW5f7isN1Q6SHO3UAzQPvmbqETISPLHP24vqIlFgUcVEupjgip\nyWDa/LMMjnilEU4cCFl8iDX0A+9ygd+zlqrID8UKNdIf1uGzcLJ9J6h2duNU4Ryw\nGqHUrqAp8AZFdZWOi8hRBX6r66NE0Eo+JVVK1aCP6T9tV7Gl3qUFAuLpxp/G13bf\nrB5Ogi7vAgMBAAECggEAL4HrJw5ySQjGTt5/zbvqP1K0/I0oJ0eN3nhHNUWsLcZM\noSn28VqTmp9p7x9halYwh+yKBq4affDio7pf3rmwCg7NXTWe5Zx0WSUqPMhLcoOv\nhkQbdGYc/JioOH6RP1Fuvb3m3aZmc1jydNoZJvhFdjUlAvb+hdbF8gCRohj+f+8X\n+UndZZyETrdwVlBAyzhwMu9CjYLH0J+UGbwCtW3bomreu2mmR3vjp0EE0lIc7TsR\nOsrVhJy/qQ5T1V8RC2aEaAA2ZlzHtR5IDYutwTce/5P/egfPj/RDifJL5Zna91pL\n7ZJSqpjPng2fYJOORCipzFz0pscQ2xZpT9bktD7POQKBgQDnddIIMk+e1Ru/Ibpx\niK62bUstaZk/PSLgfJqZNin1lyMyuVo+kpE6epEE5QfYv+K5rEPRYxLtBdoMLLY5\nO0uy7tc+qkc+mRkrkg/yWL0qGbcMDBxIgC7KIVfcP9GoCQpsZXEcMNQbkWnK3Q7w\nPZe/v1tOOyU8yBcHGFNYgu7L/QKBgQDYkJUc9ZFE3/SA/CCiUSzksUfdRbb8dliA\nfnOpuUK2PdnkJKtceZKBHc6ekApRFeRad6Iu4FKR4+bgLkuWzO6iCn8gvpAce+4c\nfhSMug66Eq+VGhQo4lFH0o+L+yaLyeFHm2SCkL+/xqkZHVWCSQt4/FMnd3YqRhGW\nn381s5AcWwKBgDiVB9wzGF22sQq/XwmkJTm5bBhU6T6ZXm5MZ6quoAFGijc7MoF7\naP9HuS3eI1XsSqujHg0Q0C6bMJurTnydLzs1we6yx6nY2VtaYIWZBd1F3gaW608Z\n7tZA4m6YN1OBqkenYMhIc4GtwZPzCFTYacFZMSPlt4utSlvUqYNItsGtAoGARNrr\nXhLBxllCXwRKx/DxSiEHjVXOEUT7bJdH5Q2vJUxTC9OQ3E0XBJBaklWPwioouY7R\n9P+DoTkJvftaMy8jLEgUFXAhV70bftmjZP7/EbBBPTHWeQ1D9IcA9uu6XLWqN98z\nPMQTA0GBoCeQeWUKDcSEF8dGvbgbfX1mr8dQqYMCgYAc+WocPVuWkIW4WR2DSjzb\nWnZIgm1/tyZDaeecyna2R8idKc8A5qqiTHr0OG5cM5m05SiAQC5e9tcVvGj4dcgl\n81NgxMRuChj07mM2EHPA/luNvmFdRTvMRJJRDLiaXp2DHfaqXBvOj6SRByvYVaWT\not3SlXVQ4l3vRldhmu7K9Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "aiot-receiver-service@aiot-data-handler.iam.gserviceaccount.com",
+  "client_id": "105574687992913486312",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/aiot-receiver-service%40aiot-data-handler.iam.gserviceaccount.com"
+}

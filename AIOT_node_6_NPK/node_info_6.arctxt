@@ -1,0 +1,29 @@
+NODE_NO=6
+NUMBER_OF_SENSORS=1
+SENSORS_NAMES={
+	'SOIL_NPK_SENSOR':'soil_nitrogen__phosphorus_and_potassium'
+	}
+	
+SENSORS_DETAILS={
+	'SOIL_NPK_SENSOR':{
+		'HARD_PINS': {
+			'1':
+			'2':
+			'3':
+			'4':
+		}
+		'SOFT_PINS':{
+			'BROWN':'12VAC'
+			'BLACK':'0VAC'
+			'BLUE':'B'
+			'YELLOW':'A'
+			'5VDC':'ARDUINO'
+			'0VDC':'ARDUINO'
+			'R0':'DIGITAL5'
+			'RE':'DIGITAL6'
+			'DE':'DIGITAL7'
+			'DI':'DIGITAL8'
+			}
+		'HEADER':'SoftwareSerial'
+	}
+}

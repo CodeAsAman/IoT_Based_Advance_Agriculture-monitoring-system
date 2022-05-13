@@ -1,0 +1,10 @@
+Source: https://pypi.org/project/pyLoRa/
+
+How to Use: 
+	 if you are running on an Arduino 
+	 the LORA_CLIENT (https://github.com/rpsreal/LoRa_Ra-02_Arduino/blob/master/LORA_CLIENT.ino)
+	 then start the LORA_SERVER.py (https://github.com/rpsreal/pySX127x/blob/master/LORA_SERVER.py) 
+	 on Raspberry Pi. 
+	 
+Github (Arduino): https://github.com/rpsreal/LoRa_Ra-02_Arduino
+Github (Pi) : https://github.com/rpsreal/pySX127x

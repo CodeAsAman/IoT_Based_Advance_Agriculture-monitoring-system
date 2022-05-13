@@ -1,0 +1,42 @@
+NODE_NO=3
+serial_at=9600
+SENSORS={'CAPACITIVE_SOIL_SENSOR_VALUE',
+		 'DS18B20_THERMOMETER',
+		 'DHT11',
+		 'SOIL_PH_SENSOR'}
+N_SENORS=4
+VNC_pi=TRUE
+SSH_pi=TRUE
+SERIAL_pi=TRUE
+DELAY_pi=10
+DELAY_uno=5
+
+'CAPACITIVE_SOIL_SENSOR_VALUE'={'maximum_raw':595,
+								'minimum_raw':233,
+								'at_':'uno',
+								'at_pin':'uno_A0'
+								'power_in':'uno_3.3VDC',
+								'header':[],
+								'info':None
+								}
+								
+DS18B20_THERMOMETER={'at_':'uno',
+					 'at_pin':'uno_D02',
+					 'power_in':'EXT_5VDC',
+					 'header':['OneWire.h','DallasTemperature.h'],
+					 'info':'r_4k7_postive_n_signal'
+					 }
+					 
+DHT11={'at_':'pi3',
+	   'at_pin':'GPIO4',
+	   'power_in':'pi3_3.3VDC',
+	   'header':['Adafruit_DHT']
+	   'info':'install__$python3 -m pip install Adafruit-DHT'
+	   }
+	   
+SOIL_PH_SENSOR={'at_':'uno',
+				'at_pin':'uno_A1',
+				'power_in':'EXT_5VDC',
+				'header':[],
+				'info':'ERROR_VALUE_OUT_FAIL_TO_CALIBRATE'
+				}

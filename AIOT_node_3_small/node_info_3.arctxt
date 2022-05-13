@@ -1,0 +1,53 @@
+NODE_NO=3
+NUMBER_OF_SENSORS=3
+SENSORS_NAMES={
+	'DHT22':'air_temperature_and_humidity'
+	'CAPACITIVE_SOIL_SENSOR':'soil_moisture_sensor'
+	'DS18B20_THERMOMETER':'soil_temperature_sensor'
+	}
+	
+SENSORS_DETAILS={
+	'DHT22':{
+		'HARD_PINS': {
+			'1':'3.3VDC'
+			'2':'0VDC'
+			'3':'DIGITAL4'
+			'4':'NONE'
+		}
+		'SOFT_PINS':{
+			'RED':'3.3VDC'
+			'BLACK':'0VDC'
+			'YELLOW':'DIGITAL4'
+			'10K':'3.3VDC_n_DIGITAL4'
+			}
+		'HEADER':'DHT by Adafruit'
+	}
+	'CAPACITIVE_SOIL_SENSOR':{
+		'HARD_PINS': {
+			'1':'3.3VDC'
+			'2':'0VDC'
+			'3':'A0'
+			'4':'DIGITAL3'
+		}
+		'SOFT_PINS':{
+			'RED':'3.3VDC'
+			'BLACK':'0VDC'
+			'YELLOW':'ANALOG0'
+			}
+		'HEADER':'NONE'
+	}
+	'DS18B20_THERMOMETER':{
+		'HARD_PINS': {
+			'1':'3.3VDC'
+			'2':'0VDC'
+			'3':'A0'
+			'4':'DIGITAL3'
+		}
+		'SOFT_PINS':{
+			'RED':'3.3VDC'
+			'BLACK':'0VDC'
+			'YELLOW':'DIGITAL3'
+			'4k7':'3.3VDC_n_DIGITAL3'
+			}
+		'HEADER':['OneWire by Paul Stoffregen',DallasTemperature by Miles']
+}
